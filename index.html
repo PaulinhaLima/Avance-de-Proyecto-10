@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heades</title>
+    <link rel="stylesheet" href="css/encabezado.css">
+    <title>Header</title>
 </head>
+
 <body>
-    <header class="header">
-    <div class="top_bar">
-    <div class="container">
-      <div class="top_left">
-        <span>
-          <i class="icon"></i>
-          Hotline: <a href="tel:+01023345678">+01 023 345 678</a>
-        </span>
-      </div>
+    <div class="barra-superior">
+        <div class="contenedor barra-superior__contenido">
 
-      <div class="top_right">
-        <a href="#" class="top-link">Login / Register</a>
-        <a href="#" class="top-link">FAQ</a>
-        <a href="#" class="top-link">Order tracking</a>
-      </div>
-     </div>
-     </div>
+            <div class="barra-superior__izquierda">
+                <span>Línea directa: +01 023 345 678</span>
+            </div>
 
-     <div class="main_header">
-    <div class="container">
+            <div class="barra-superior__derecha">
+                <a href="#" class="barra-superior__enlace">Iniciar sesión / Registrarse</a>
+                <a href="#" class="barra-superior__enlace">Preguntas frecuentes</a>
+                <a href="#" class="barra-superior__enlace">Seguimiento de pedidos</a>
+            </div>
 
- 
-      <div class="logo">
-        <a href="/">
-          <img src="logo.png" alt="Imagen del logo">
-          <span>Seven <strong>Shop</strong></span>
-        </a>
-      </div>
+        </div>
+    </div>
+    <header class="encabezado">
+        <div class="contenedor encabezado__contenido">
 
-      <nav class="main_nav">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Catalogue</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">More</a></li>
-        </ul>
-      </nav>
-        
+            <a href="#" class="encabezado__logo">
+        Seven <strong>Shop</strong>
+      </a>
+            <nav class="menu-principal" aria-label="Menú principal">
+                <a href="#" class="menu-principal__enlace activo">Hogar</a>
+                <a href="#" class="menu-principal__enlace">Catalogar</a>
+                <a href="#" class="menu-principal__enlace">Acerca de</a>
+                <a href="#" class="menu-principal__enlace">Noticias</a>
+                <a href="#" class="menu-principal__enlace">Más</a>
+            </nav>
+
+            <div class="encabezado__acciones">
+
+                <form class="buscador" role="search">
+                    <input type="search" class="buscador__entrada" placeholder="Buscar...">
+                    <button type="submit" class="buscador__boton">🔍</button>
+                </form>
+
+                <a href="#" class="carrito" aria-label="Carrito de compras">
+                    <span class="carrito__icono">🛒</span>
+                    <span class="carrito__total">$ 0.00</span>
+                </a>
+
+            </div>
+
+        </div>
     </header>
+
 </body>
+
 </html>
